@@ -1,0 +1,52 @@
+/* Default styles that will carry to the child style sheet */
+body, html {
+  font-family: "Droid Sans Mono";
+  font-style: normal; 
+  font-variant: normal;
+  color: #fff;
+  background-color: #002c37;
+  margin: 0;
+}
+ 
+ /* Structural elements */
+ .wrapper{
+   width: 100%;
+ }
+
+.avatar {
+  border-radius: 50%;
+  border:1px solid #fff;
+}
+
+ .row {
+   height: 150px;
+   /* padding: 20px; */
+ }
+ 
+ .content{
+   width: 80%;
+   height: 100%;
+   float: left;
+   /* margin-right: 3%; */
+   border-bottom:1px solid white;
+   background-color: #02596e;
+ }
+ 
+ .sidebar{
+   width: 20%;
+   height: 100%;
+   float: left;
+   /* margin-right: 3%; */
+   border-bottom:1px solid white;
+   background-color: #004354;
+ }
+
+ .sidebar-content{
+  padding: 10px;
+  text-align: center;
+}
+
+.info-content{
+  padding: 10px;
+  text-align: left;
+}

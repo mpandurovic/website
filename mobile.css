@@ -1,0 +1,16 @@
+.wrapper{
+    width: 90%;
+    margin: 20px;
+  }
+  
+  .content{
+    width: 100%;
+  }
+  
+  .sidebar{
+    width: 100%;
+    clear: both;
+  
+    /* Additional styling for our new layout */
+    margin-top: 20px;
+  }
