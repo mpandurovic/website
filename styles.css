@@ -1,11 +1,11 @@
 /* Default styles that will carry to the child style sheet */
 body, html {
-  font-family: "Droid Sans Mono";
+  font-family: "Nato Sans", sans-serif;
   font-style: normal; 
   font-variant: normal;
-  color: #C3DCC9;
+  color: #1C6E8C;
   margin: 0;
-  background-color: #1C2424;
+  background-color: #4B9EC1;
 }
  
  /* Structural elements */
@@ -18,6 +18,17 @@ body, html {
   border:1px solid #7887AB;
 }
 
+.title {
+  font-size: 60px;
+  margin: 10px 0px;
+  vertical-align: middle;
+}
+
+.subtitle {
+  font-size: 25px;
+  margin: 10px 0px;
+}
+
  .row {
    display: flex;
    /* border-bottom:1px solid #040F0F; */
@@ -26,15 +37,20 @@ body, html {
  
  .content{
   min-height: 150px;
-   width: 85%;
+   width: 80%;
    height: 100%;
    /* margin-right: 3%; */
-  background-color: #212B2B;
+  background-color: #F0F9FD;
+  padding-bottom: 50px;
+ }
+
+ .header {
  }
  
  .sidebar{
-   width: 15%;
+   width: 20%;
    height: 100%;
+   color: #F0F9FD;
    /* margin-right: 3%; */
    /* background-color: #004354; */
  }
@@ -42,24 +58,28 @@ body, html {
  .sidebar-content{
    margin-left: 25px;
    margin-top: 15px;
-  text-align: left;
-  text-transform: lowercase;
+  text-align: right;
+  text-transform: uppercase;
 }
 
 .section-title {
-  margin: 0;
-  word-spacing: -8px;
-}
-
-.section-title::before {
-  content: "~$ ";
-  word-spacing: 0px;
+  margin: 15px;
 }
 
 .info-content{
   margin-left: 25px;
+  margin-right: 25px;
   margin-top: 15px;
+  max-width: 750px;
   text-align: left;
+}
+
+.header-content {
+  min-height: 450px;
+  display:flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
 }
 
 .skill-category {
@@ -95,10 +115,54 @@ body, html {
 
 }
 
-table td {
+table {
+  width: 100%;
+}
+
+td {
   vertical-align: top;
 }
 
-.experience-item {
+.experience-item, .education-item {
   display: flex;
+  margin-bottom: 25px;
+}
+
+.experience-period, .education-period {
+    width: 30%;
+    height: 100%;
+    text-align: right;
+}
+
+.experience-description, .education-description {
+  width: 70%;
+  height: 100%;
+}
+
+.info-content h4 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  /* height: 40px; */
+  /* line-height: 40px; */
+}
+
+.contact-item img {
+  /* display: block; */
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+}
+
+a:link, a:visited {
+  color: #1C6E8C;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }

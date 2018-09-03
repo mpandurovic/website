@@ -5,8 +5,15 @@
     <title>Marko Pandurovic</title>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" />
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <!-- Open Sans and Lato look best -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nato+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="mobile.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -16,14 +23,16 @@
         <div class="row">
             <div class="sidebar">
                 <div class="sidebar-content">
-                    <img src="profile.jpeg" class="avatar">
                 </div>
             </div>
 
-            <div class="content">
-                <div class="info-content">
-                    <p>Marko Pandurovic</p>
-                    <p>Software Engineer</p>
+            <div class="content header">
+                <div class="info-content header-content">
+                    <div>
+                        <img src="profile.jpeg" class="avatar">
+                    </div>
+                    <h2 class="title">Marko Pandurovic</h2>
+                    <h4 class="subtitle">Software Engineer</h4>
                 </div>
             </div>
         </div>
@@ -39,8 +48,9 @@
             </div>
 
             <div class="content">
-                <div class="info-content">
-                    <p>I am an experienced software engineer with... For the past 6 years I have worked on delivering high-quality
+                <div class="info-content" data-aos="fade-in">
+                    <p>I am a software engineer with over 6 years of professional experience. 
+                        Throughout my career, I have worked on delivering high-quality
                         code to clients across many industries.</p>
                 </div>
             </div>
@@ -54,11 +64,11 @@
             </div>
 
             <div class="content">
-                <div class="info-content">
+                <div class="info-content" data-aos="fade-in">
                     <table>
                         <colgroup>
-                            <col style="width:30%">
-                            <col style="width:70%">
+                            <col style="width:40%">
+                            <col style="width:60%">
                         </colgroup>
                         <tbody>
                             <tr>
@@ -114,37 +124,66 @@
 
             <div class="content">
                 <div class="info-content">
-                    <div class="experience-item">
-                        <div class="period">
-                            <h4>Oct 2014 - Nov 2016</h4>>
-                        </div>
+                    <div class="experience-item" data-aos="fade-in">
                         <div class="experience-description">
-                            <h4>Java Developer @ Deploy Inc. (Belgrade, Serbia)</h4>
-                            <p>Projects:
-                                    • Ray Super Remote – Android powered universal remote
-                                    control integrated with a multitude of home devices and
-                                    gadgets, enhanced with TV content, recommendations
-                                    and many device-specific apps.
-                                    • The Credit Junction – Loan platform for small and medium
-                                    sized businesses, supplied with tools for automating parts
-                                    of loan approval process.
-                                    Responsibilities:
-                                    • Implemented system features, covered by unit and
-                                    integration tests.
-                                    • Implemented REST APIs using Spring MVC.
-                                    • Implemented asynchronous services that run as
-                                    background processes.
-                                    • Involved in design of various separate components, all
-                                    parts of larger system architecture.
-                                    • Refactored large sections of system.
-                                    • Supported system used by several thousands of users in
-                                    production, debugged and fixed critical issues.
-                                    • Worked as part of a large team of developers, in a Scrum
-                                    based environment.
-                                    Worked with:
-                                    Java, Spring, Javascript, Node.js, MySQL, Git, Maven,
-                                    Redis, REST, JSON, IntelliJ IDEA, Jenkins, Vagrant,
-                                    Docker, AWS</p>
+                            <h4>Software Engineer at Symphony (Belgrade, Serbia)</h4>
+                            <h4>Projects:</h4>
+                            <p>
+                                Counsyl/Myriad – Android powered universal remote control integrated with a multitude of home devices and gadgets, enhanced
+                                with TV content, recommendations and many device-specific apps.
+                            </p>
+                            <p>
+                                AirProxima – Loan platform for small and medium sized businesses, supplied with tools for automating parts of loan approval
+                                process.
+                            </p>
+                            <p>
+                                Tech stack: Javascript, Node.js, Express, MongoDB, Python, Django, React, Git, Docker, AWS
+                            </p>
+                        </div>
+                        <div class="experience-period">
+                            <h4>Jan 2017 - Present</h4>
+                        </div>
+                    </div>
+                    <div class="experience-item" data-aos="fade-in">
+                        <div class="experience-description">
+                            <h4>Java Developer at Deploy Inc. (Belgrade, Serbia)</h4>
+                            <h4>Projects:</h4>
+                            <p>
+                                Ray Super Remote – Android powered universal remote control integrated with a multitude of home devices and gadgets, enhanced
+                                with TV content, recommendations and many device-specific apps.
+                            </p>
+                            <p>
+                                The Credit Junction – Loan platform for small and medium sized businesses, supplied with tools for automating parts of loan
+                                approval process.
+                            </p>
+                            <p>
+                                Tech stack: Java, Spring, Javascript, Node.js, MySQL, Git, Maven, Redis, REST, JSON, IntelliJ IDEA, Jenkins, Vagrant, Docker,
+                                AWS
+                            </p>
+                        </div>
+                        <div class="experience-period">
+                            <h4>Oct 2014 - Nov 2016</h4>
+                        </div>
+                    </div>
+                    <div class="experience-item" data-aos="fade-in">
+                        <div class="experience-description">
+                            <h4>Java Developer at Gecko Solutions (Belgrade, Serbia)</h4>
+                            <h4>Projects:</h4>
+                            <p>
+                                Ray Super Remote – Android powered universal remote control integrated with a multitude of home devices and gadgets, enhanced
+                                with TV content, recommendations and many device-specific apps.
+                            </p>
+                            <p>
+                                The Credit Junction – Loan platform for small and medium sized businesses, supplied with tools for automating parts of loan
+                                approval process.
+                            </p>
+                            <p>
+                                Tech stack: Java, Play Framework, Akka, Scala, MySQL, Mercurial, Redis, Solr, MongoDB, SQL Server, REST, JSON, Eclipse, Jenkins,
+                                AWS
+                            </p>
+                        </div>
+                        <div class="experience-period">
+                            <h4>Sep 2012 - Oct 2014</h4>
                         </div>
                     </div>
                 </div>
@@ -159,7 +198,26 @@
             </div>
 
             <div class="content">
-                Content 2
+                <div class="info-content" data-aos="fade-in">
+                    <div class="education-item" data-aos="fade-in">
+                        <div class="education-description">
+                            <h4>University of Belgrade, School of Electrical Engineering</h4>
+                            <h4>Master of Science in Software Engineering</h4>
+                        </div>
+                        <div class="education-period">
+                            <h4>2013 - 2016</h4>
+                        </div>
+                    </div>
+                    <div class="education-item" data-aos="fade-in">
+                        <div class="education-description">
+                            <h4>University of Belgrade, School of Electrical Engineering</h4>
+                            <h4>Bachelor of Science in Computer Engineering and Information Technology</h4>
+                        </div>
+                        <div class="education-period">
+                            <h4>2008 - 2012</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -171,18 +229,34 @@
             </div>
 
             <div class="content">
-                <div class="info-content">
-                    <p>Phone?</p>
-                    <p>Skype</p>
-                    <p>Email</p>
-                    <p>Linkedin</p>
-                    <p>Website</p>
-                    <p>Github?</p>
+                <div class="info-content" data-aos="fade-in">
+                    <div class="contact-item">
+                        <img src="email.svg">
+                        <a href="mailto:marko.pandurovic.dev@gmail.com">marko.pandurovic.dev@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="website.svg">
+                        <a href="http://markopandurovic.com" target="_blank">markopandurovic.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="linkedin.svg">
+                        <a href="https://www.linkedin.com/in/marko-pandurovic-63337857" target="_blank">Linkedin</a>
+                    </div>
+
                 </div>
             </div>
         </div>
 
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1500,
+            once: true,
+            delay: 100,
+        });
+    </script>
 
 </body>
 
