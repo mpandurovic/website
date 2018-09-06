@@ -4,13 +4,10 @@
 <head>
     <title>Marko Pandurovic</title>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans+Mono" />
-    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
     <!-- Open Sans and Lato look best -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nato+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="mobile.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -27,12 +24,23 @@
             </div>
 
             <div class="content header">
-                <div class="info-content header-content">
+                <div class="info-content header-content" >
                     <div>
-                        <img src="profile.jpeg" class="avatar">
+                        <img src="profile.jpeg" class="avatar" 
+                        data-aos="fade-left" 
+                        data-aos-easing="ease"
+                        data-aos-duration="1500">
                     </div>
-                    <h2 class="title">Marko Pandurovic</h2>
-                    <h4 class="subtitle">Software Engineer</h4>
+                    <h2 class="title" 
+                    data-aos="fade-left" 
+                    data-aos-easing="ease"
+                    data-aos-delay="200"
+                    data-aos-duration="1500">Marko Pandurovic</h2>
+                    <h4 class="subtitle"
+                    data-aos="fade-left" 
+                    data-aos-easing="ease"
+                    data-aos-delay="300"
+                    data-aos-duration="1500">Software Engineer</h4>
                 </div>
             </div>
         </div>
@@ -75,37 +83,37 @@
                                 <td>
                                     <span class="skill-category-name">Languages &amp; Frameworks:</span>
                                 </td>
-                                <td>
-                                    <span class="skill">java</span>
-                                    <span class="skill">javascript</span>
-                                    <span class="skill">sql</span>
-                                    <span class="skill">python</span>
-                                    <span class="skill">html</span>
-                                    <span class="skill">spring</span>
-                                    <span class="skill">node.js</span>
-                                    <span class="skill">express</span>
-                                    <span class="skill">django</span>
+                                <td class="skills">
+                                    <span class="skill">Java</span>
+                                    <span class="skill">JavaScript</span>
+                                    <span class="skill">SQL</span>
+                                    <span class="skill">Python</span>
+                                    <span class="skill">HTML</span>
+                                    <span class="skill">Spring</span>
+                                    <span class="skill">Node.js</span>
+                                    <span class="skill">Express</span>
+                                    <span class="skill">Django</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <span class="skill-category-name">Databases:</span>
                                 </td>
-                                <td>
-                                    <span class="skill">mysql</span>
-                                    <span class="skill">postgresql</span>
-                                    <span class="skill">mongodb</span>
-                                    <span class="skill">redis</span>
+                                <td class="skills">
+                                    <span class="skill">MySQL</span>
+                                    <span class="skill">PostgreSQL</span>
+                                    <span class="skill">MongoDB</span>
+                                    <span class="skill">Redis</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <span class="skill-category-name">Other Tools:</span>
                                 </td>
-                                <td>
-                                    <span class="skill">git</span>
-                                    <span class="skill">docker</span>
-                                    <span class="skill">rest</span>
+                                <td class="skills">
+                                    <span class="skill">Git</span>
+                                    <span class="skill">Docker</span>
+                                    <span class="skill">REST</span>
                                 </td>
                             </tr>
                         </tbody>
@@ -129,12 +137,13 @@
                             <h4>Software Engineer at Symphony (Belgrade, Serbia)</h4>
                             <h4>Projects:</h4>
                             <p>
-                                Counsyl/Myriad – Android powered universal remote control integrated with a multitude of home devices and gadgets, enhanced
-                                with TV content, recommendations and many device-specific apps.
+                                Counsyl/Myriad – A DNA testing and genetic counseling service that offers 
+                                genetic screening for men, women and their children.
                             </p>
                             <p>
-                                AirProxima – Loan platform for small and medium sized businesses, supplied with tools for automating parts of loan approval
-                                process.
+                                AirProxima – Flight optimization tool and search engine 
+                                that allows operators to better utilize their fleet and customers 
+                                to book affordable private charter flights.
                             </p>
                             <p>
                                 Tech stack: Javascript, Node.js, Express, MongoDB, Python, Django, React, Git, Docker, AWS
@@ -167,15 +176,19 @@
                     </div>
                     <div class="experience-item" data-aos="fade-in">
                         <div class="experience-description">
-                            <h4>Java Developer at Gecko Solutions (Belgrade, Serbia)</h4>
-                            <h4>Projects:</h4>
+                            <p>Java Developer at 
+                                <strong><a href="http://www.gecko.rs" target="_blank">Gecko Solutions</a></strong> 
+                                (Belgrade, Serbia)
+                            </p>
+                            <p>Projects:</p>
                             <p>
-                                Ray Super Remote – Android powered universal remote control integrated with a multitude of home devices and gadgets, enhanced
-                                with TV content, recommendations and many device-specific apps.
+                                Beam – Location sharing app that lets users 
+                                provide their location to friends in a private and secure manner.
                             </p>
                             <p>
-                                The Credit Junction – Loan platform for small and medium sized businesses, supplied with tools for automating parts of loan
-                                approval process.
+                                Pingup – Scheduling aggregation platform that combines 
+                                multiple services to connect clients and their users 
+                                with thousands of merchants using its public REST API.
                             </p>
                             <p>
                                 Tech stack: Java, Play Framework, Akka, Scala, MySQL, Mercurial, Redis, Solr, MongoDB, SQL Server, REST, JSON, Eclipse, Jenkins,
@@ -231,12 +244,12 @@
             <div class="content">
                 <div class="info-content" data-aos="fade-in">
                     <div class="contact-item">
-                        <img src="email.svg">
-                        <a href="mailto:marko.pandurovic.dev@gmail.com">marko.pandurovic.dev@gmail.com</a>
+                        <img src="website.svg">
+                        <a href="http://markopandurovic.me" target="_blank">markopandurovic.me</a>
                     </div>
                     <div class="contact-item">
-                        <img src="website.svg">
-                        <a href="http://markopandurovic.com" target="_blank">markopandurovic.com</a>
+                        <img src="email.svg">
+                        <a href="mailto:marko.pandurovic.dev@gmail.com">marko.pandurovic.dev@gmail.com</a>
                     </div>
                     <div class="contact-item">
                         <img src="linkedin.svg">
