@@ -82,6 +82,10 @@ body, html {
   justify-content: center;
 }
 
+.aboutme {
+  margin-top: 0px;
+}
+
 .skill-category {
   margin-bottom: 5px;
 }
@@ -124,26 +128,39 @@ body, html {
 
 table {
   width: 100%;
+  border-collapse: collapse; 
+  border-spacing: 0px;
 }
 
 td {
   vertical-align: top;
 }
 
+tr {
+}
+
 .experience-item, .education-item {
   display: flex;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
+}
+
+.experience-position {
+  margin-top: 0;
 }
 
 .experience-period, .education-period {
     width: 30%;
     height: 100%;
-    text-align: right;
+    text-align: left;
 }
 
 .experience-description, .education-description {
   width: 70%;
   height: 100%;
+}
+
+.education-description p {
+  margin-top: 0;
 }
 
 .info-content h4 {
