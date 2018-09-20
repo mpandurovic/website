@@ -27,10 +27,17 @@ body, html {
  }
 
 .avatar {
+   width: 200px;
+   height: 200px;
+   /* content: url('../images/profile.png');
+    */
+ }
+
+/* .avatar::after {
   width: 200px;
   height: 200px;
-  content: url('./../images/profile.png');
-}
+  content: url('../images/profile.png');
+} */
 
 .title {
   font-size: 60px;
