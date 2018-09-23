@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 module.exports = {
@@ -47,6 +48,9 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "src/index.html"),
             inject: 'body'
-        })
+        }),
+        new CopyWebpackPlugin([
+            { from: './src/favicon.ico' },
+        ])
     ],
 };
